@@ -10,6 +10,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+  <script>
+    // Disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  
+    // Disable Ctrl+U, Ctrl+C, Ctrl+Shift+I
+    document.addEventListener('keydown', event => {
+      if (
+        event.ctrlKey && 
+        ['u', 'U', 'c', 'C'].includes(event.key) || 
+        (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'i')
+      ) {
+        event.preventDefault();
+      }
+    });
+  </script>
+  
   <!-- HEADER -->
   <header class="header">
     <div class="container header-container">
@@ -330,7 +346,7 @@
       <div class="footer-item">
         <p><i class="fas fa-envelope"></i> agrawal.akash@asu.edu</p>
       </div>
-  
+  <!-- © 2025 Akash Agrawal. All rights reserved. -->
     </div>
   </footer>
   
