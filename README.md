@@ -1,4 +1,4 @@
-#👋 Hi, I am Akash
+👋 Hi, I am Akash
 
 Welcome to my Portfolio!
 
