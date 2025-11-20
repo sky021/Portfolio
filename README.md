@@ -1,4 +1,6 @@
-# Hi, I'm Akash. Welcome to my Portfolio.
+#👋 Hi, I am Akash
+
+Welcome to my Portfolio!
 
 Thanks for stopping by. This repository houses the source code for my personal portfolio website, where I showcase my journey in Computer Science, from my work in Distributed Systems and AI to my time at Arizona State University.
 
