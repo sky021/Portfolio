@@ -24,6 +24,7 @@ export default function Hero() {
                 src="/images/Photo.jpeg"
                 alt={personalInfo.name}
                 fill
+                sizes="160px"
                 className="object-cover"
                 priority
               />
