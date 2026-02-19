@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "2.0.0",
-  "description": "Modern Next.js 14+ Portfolio with AI Chatbot",
+  "description": "Modern portfolio built with Next.js 14, TypeScript, Tailwind CSS, featuring dark mode, Framer Motion animations, comprehensive SEO, and AI chatbot integration",
   "private": true,
   "scripts": {
     "dev": "next dev",
