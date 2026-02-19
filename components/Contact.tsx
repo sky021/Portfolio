@@ -1,8 +1,13 @@
 'use client'
 
 import { useState } from 'react'
+import { motion } from 'framer-motion'
+import { useInView } from 'framer-motion'
+import { useRef } from 'react'
 
 export default function Contact() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -30,12 +35,23 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
+        <motion.h2 
+          className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900 dark:text-white"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6 }}
+        >
           Contact Me
-        </h2>
-        <div className="max-w-2xl mx-auto">
+        </motion.h2>
+        <motion.div 
+          ref={ref}
+          className="max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 50 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <input
@@ -45,7 +61,7 @@ export default function Contact() {
                 onChange={handleChange}
                 placeholder="Name"
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-600 transition-colors"
               />
             </div>
             <div>
@@ -56,7 +72,7 @@ export default function Contact() {
                 onChange={handleChange}
                 placeholder="Email"
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-600 transition-colors"
               />
             </div>
             <div>
@@ -67,22 +83,24 @@ export default function Contact() {
                 placeholder="Message"
                 required
                 rows={6}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-600 transition-colors"
               />
             </div>
-            <button
+            <motion.button
               type="submit"
               className="w-full px-8 py-4 bg-primary-600 text-white font-semibold rounded-lg shadow-lg hover:bg-primary-700 transition-all"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
             >
               Send Message
-            </button>
+            </motion.button>
             {status && (
-              <p className="text-center text-sm text-gray-600 mt-2">
+              <p className="text-center text-sm text-gray-600 dark:text-gray-400 mt-2">
                 {status}
               </p>
             )}
           </form>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
