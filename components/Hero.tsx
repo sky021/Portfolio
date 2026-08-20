@@ -123,7 +123,7 @@ export default function Hero() {
           <div className="animate-fade-up mx-auto w-full max-w-[280px] lg:max-w-none" style={{ animationDelay: '180ms' }}>
             <div className="relative aspect-square overflow-hidden rounded-2xl border border-ink-200 bg-ink-100 dark:border-ink-800 dark:bg-ink-900">
               <Image
-                src="/images/Photo.jpeg"
+                src="/images/Photo.png"
                 alt={profile.name}
                 fill
                 sizes="(min-width: 1024px) 320px, 280px"

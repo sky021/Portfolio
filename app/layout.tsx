@@ -79,7 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@type': 'Person',
     name: profile.name,
     url: siteUrl,
-    image: `${siteUrl}/images/Photo.jpeg`,
+    image: `${siteUrl}/images/Photo.png`,
     jobTitle: 'Software Engineer - AI',
     description: profile.bio,
     email: profile.email,
