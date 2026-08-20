@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akash Agrawal - Portfolio</title>
+  <meta name="description" content="Akash Agrawal's Portfolio - Software Engineer | Machine Learning Engineer | Data Scientist" />
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <script>
+    // Disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  
+    // Disable Ctrl+U, Ctrl+C, Ctrl+Shift+I
+    document.addEventListener('keydown', event => {
+      if (
+        event.ctrlKey && 
+        ['u', 'U', 'c', 'C'].includes(event.key) || 
+        (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'i')
+      ) {
+        event.preventDefault();
+      }
+    });
+  </script>
+  
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="/" class="logo">
+        <img src="images/symbol.png" alt="Akash Agrawal">
+      </a>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-icon">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION (Full viewport without overlay) -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <!-- Profile image feature -->
+      <div class="profile-container">
+        <img src="images/Photo.jpeg" alt="Profile Image" class="profile-image">
+      </div>
+      <h1>Akash Agrawal</h1>
+      <p>Software Engineer | Machine Learning Engineer | Data Scientist</p>
+      <a href="https://drive.google.com/file/d/1P40RrIwUYP21LqoVb1LpgKvG4eDpeP8o/view?usp=sharing" class="btn">View Resume</a>
+      <div class="hero-social">
+        <a href="https://linkedin.com/in/akashagrawal021" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/sky021" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION (Full viewport with light overlay) -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a Computer Science graduate student at Arizona State University, graduating in December 2025. I bring over two years of professional experience as a Software Engineer at LTIMindtree, where I led and contributed to enterprise-scale projects involving cloud migration, backend automation, and configuration tools using technologies like SQL, Python, APIs, JavaScript and Oracle Fusion.</p>
+      <p>In parallel with my graduate studies, I have worked as a Research Assistant on computer vision projects and developed real-time AI applications such as LambdaLens and PersonalizedFeed—showcasing my ability to deploy machine learning models, automate workflows, and build scalable backend systems using AWS, PyTorch, OpenCV, and FastAPI.</p>
+      <p>I am currently seeking Summer 2025 internship opportunities in Software Engineering, Machine Learning Engineering, or Data Science roles. With a strong foundation in algorithms, practical experience deploying ML systems, and a track record of solving real-world problems at scale, I am confident in my ability to contribute to teams building impactful, data-driven products.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION (Full viewport with light overlay) -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-grid">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Django</li>
+        <li>SQL</li>
+        <li>MongoDB</li>
+        <li>PostgreSQL</li>
+        <li>Oracle Fusion</li>
+        <li>AWS</li>
+        <li>Docker</li>
+        <li>Kubernetes</li>
+        <li>Git</li>
+        <li>Jira</li>
+        <li>Pandas</li>
+        <li>Numpy</li>
+        <li>OpenCV</li>
+        <li>Pytorch</li>
+        <li>FastAPI</li>
+        <li>Flask</li>
+        <li>SkLearn</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION (Full viewport with light overlay)
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2>My Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-icon">&#128188;</div>
+            <div class="timeline-content">
+              <h3>Graduate Research Assistant - ASU</h3>
+              <p>
+                At Arizona State University, I built an AI tool that detects and tracks soil particles movement with 94% accuracy, automating geo-technical researcher's manual efforts. Using thousands of soil particle's images and smart data analysis, this tool makes soil research faster and more reliable.
+              </p>
+              <span class="date">Aug 2024 - Present</span>
+            </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">&#127891;</div>
+          <div class="timeline-content">
+            <h3>Master's in Computer Science - ASU</h3>
+            <p>
+              Currently mastering Computer Science at Arizona State (straight-A student!), learning how to build smarter AI, secure software, and systems that handle massive data. Every class—from machine learning to cloud tech—equips me to tackle real-world challenges with precision.
+              GPA: 4/4
+            </p>
+            <span class="date">Jan 2024 - Dec 2025 (Expected)</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon">&#128188;</div>
+          <div class="timeline-content">
+            <h3>Software Engineer - Ltimindtree</h3>
+            <p>
+                At LTIMINDTREE, I moved over a million customer records to Oracle Cloud using SQL and Python, making data safer and cheaper to handle. I also built an automation tool that saved 300+ hours of manual work for efficient migration of configurations across environments, hence boosting operational efficiency.
+            </p>
+            <span class="date">Jan 2023 - Nov 2023</span>
+          </div>
+        </div>
+      <div class="timeline-item">
+        <div class="timeline-icon">&#127891;</div>
+        <div class="timeline-content">
+          <h3>Bachelor's in Computer Science - RBU</h3>
+          <p>
+            Earned my Bachelor’s in Computer Science from Ramdeobaba University, mastering the building blocks of tech—machine learning, data systems, and web development. Courses in algorithms, databases, and distributed systems taught me how to design solutions that scale and work seamlessly in the real world.
+          </p>
+          <span class="date">Aug 2017 – Jun 2021</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section> -->
+
+    <!-- EXPERIENCE & EDUCATION SECTION (Full viewport with light overlay) -->
+    <section id="experience" class="experience">
+    <div class="container">
+        <h2>Professional Timeline</h2>
+        <div class="experience-list">
+        
+        <!-- Item 1 -->
+        <div class="experience-item">
+            <div class="year">2024</div>
+            <div class="details">
+            <h3>Graduate Research Assistant</h3>
+            <h4>Arizona State University</h4>
+            <p>
+                At Arizona State University, I built an AI tool that detects and tracks soil particles movement with 94% accuracy, automating geo-technical researcher's manual efforts. Using thousands of soil particle's images and smart data analysis, this tool makes soil research faster and more reliable.
+            </p>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="experience-item">
+            <div class="year">2023</div>
+            <div class="details">
+            <h3>Software Engineer</h3>
+            <h4>LTIMINDTREE</h4>
+            <p>
+                At LTIMINDTREE, I moved over a million customer records to Oracle Cloud using SQL and Python, making data safer and cheaper to handle. I also built an automation tool that saved 300+ hours of manual work for efficient migration of configurations across environments, hence boosting operational efficiency.
+            </p>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="experience-item">
+            <div class="year">2021</div>
+            <div class="details">
+            <h3>Bachelor's in Computer Science</h3>
+            <h4>Ramdeobaba University</h4>
+            <p>
+                Earned my Bachelor’s in Computer Science from Ramdeobaba University, mastering the building blocks of tech—machine learning, data systems, and web development. Courses in algorithms, databases, and distributed systems taught me how to design solutions that scale and work seamlessly in the real world.
+            </p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
+  
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="projects">
+    <div class="container">
+      <h2>Sample Work</h2>
+  
+      <!-- Single Project Card -->
+      <div class="project-card">
+        <!-- Left Side Image -->
+        <div class="project-card-image">
+          <img src="images/FaceRec.jpeg" alt="AWS Video FaceRec">
+        </div>
+  
+        <!-- Right Side Content -->
+        <div class="project-card-content">
+          <!-- Header row with title and GitHub icon -->
+          <div class="project-card-header">
+            <h3>LambdaLens</h3>
+            <a href="https://github.com/sky021/LambdaLens.git" target="_blank" class="github-icon">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+  
+          <!-- Description -->
+          <p class="project-card-description">
+            Created LambdaLens—a smart video analysis tool on AWS that automatically spots key scenes and identifies faces in real-time, slashing cloud costs. Built with Python and Docker, it’s like giving videos a sharp eye for detail!
+          </p>
+  
+          <!-- Tech Tags -->
+          <div class="project-card-tags">
+            <span>Python</span>
+            <span>React.js</span>
+            <span>AWS S3</span>
+            <span>Tailwind</span>
+            <span>AWS Lambda</span>
+            <span>SQS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <!-- Left Side Image -->
+        <div class="project-card-image">
+          <img src="images/FeedsPersonalization.jpg" alt="Social Sentry">
+        </div>
+  
+        <!-- Right Side Content -->
+        <div class="project-card-content">
+          <!-- Header row with title and GitHub icon -->
+          <div class="project-card-header">
+            <h3>PersonalizedFeed</h3>
+            <a href="https://drive.google.com/file/d/1ZtknOA5m8jvUkdNEFvjLaBJIM8uJCuv4/view?usp=sharing" target="_blank" class="publication-icon">
+              <i class="fas fa-file-alt"></i>
+            </a>
+          </div>
+  
+          <!-- Description -->
+          <p class="project-card-description">
+            Built an Android app that shows users only the messages they care about by learning their interests. Trained ML models to sort 11K+ messages with 96% accuracy and used Firebase to deliver a clean, personalized feed that cuts out the noise.
+          </p>
+  
+          <!-- Tech Tags -->
+          <div class="project-card-tags">
+            <span>NLP</span>
+            <span>SVM</span>
+            <span>NB</span>
+            <span>LR</span>
+            <span>GCP</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- You can duplicate the .project-card block above for additional projects -->
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION (Full viewport with light overlay)
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <img src="images/placeholder1.jpg" alt="Project 1" />
+          <h3>LambdaLens</h3>
+          <p>
+            Created LambdaLens—a smart video analysis tool on AWS that automatically spots key scenes and identifies faces in real-time, slashing cloud costs. Built with Python and Docker, it’s like giving videos a sharp eye for detail!
+          </p>
+        </div>
+        <div class="project">
+            <img src="images/placeholder1.jpg" alt="Project 1" />
+            <h3>Social Sentry</h3>
+            <p>
+             Built a smart spam filter that spots fake news and harmful messages with 96% accuracy, keeping social media users safe. Used NLP and clever algorithms to clean up 11K+ messages, then deployed it on Google Cloud for seamless mobile access. Even published my findings to help others fight spam!
+            </p>
+        </div>
+         Additional project cards can be added here 
+      </div>
+    </div>
+  </section> -->
+
+  <!-- CONTACT SECTION (Full viewport with light overlay) -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="name" required />
+        <input type="email" placeholder="email" required />
+        <textarea placeholder="message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER
+  <footer class="footer">
+  <p>© 2025 Akash Agrawal</p>
+  <div class="social-links">
+    <a href="https://linkedin.com/in/akashagrawal021" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://github.com/sky021" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+  </div>
+  </footer> -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+  
+      <!-- Address -->
+      <div class="footer-item">
+        <p><i class="fas fa-map-marker-alt"></i> 1831 E Apache Blvd, Tempe, AZ 85281</p>
+      </div>
+  
+      <div class="footer-divider"></div>
+  
+      <!-- Phone -->
+      <div class="footer-item">
+        <p><i class="fas fa-phone"></i> +1 (480) 589-7445</p>
+      </div>
+  
+      <div class="footer-divider"></div>
+  
+      <!-- Email -->
+      <div class="footer-item">
+        <p><i class="fas fa-envelope"></i> agrawal.akash@asu.edu</p>
+      </div>
+  <!-- © 2025 Akash Agrawal. All rights reserved. -->
+    </div>
+  </footer>
+  
+  
+
+  <!-- Link to external JS -->
+  <script src="index.js"></script>
+</body>
+</html>

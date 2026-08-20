@@ -1,0 +1,34 @@
+{
+  "name": "portfolio",
+  "version": "2.0.0",
+  "description": "Evidence-first engineering portfolio: Next.js App Router, TypeScript, Tailwind, and four interactive in-browser demos including a hand-written SQL engine",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "verify:sql": "node --experimental-strip-types scripts/verify-sql.mts",
+    "verify:sims": "node --experimental-strip-types scripts/verify-sims.mts",
+    "verify:routes": "node --experimental-strip-types scripts/verify-routes.mts",
+    "verify": "npm run verify:sql && npm run verify:sims"
+  },
+  "dependencies": {
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "resend": "^3.5.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^15.1.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.4.0"
+  }
+}
