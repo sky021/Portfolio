@@ -92,7 +92,6 @@ export default function Footer() {
 
         <div className="mt-10 flex flex-col gap-2 border-t border-ink-200 pt-6 text-[12px] text-ink-400 dark:border-ink-800 dark:text-ink-500 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} {profile.name}. All rights reserved.</p>
-          <p className="font-mono">Built with Next.js, TypeScript, and Tailwind CSS.</p>
         </div>
       </div>
     </footer>
